@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pets/models/NavBar.dart';
 import 'package:pets/models/SignUp.dart';
 import 'Button.dart';
 import 'Forgot.dart';
@@ -56,7 +57,7 @@ class LogIn extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) =>  Home()));
+                      MaterialPageRoute(builder: (context) =>  NavBar()));
                 },
                 child: Text(
                   'Log In', style: TextStyle(color: Colors.white,fontSize: 20, fontWeight: FontWeight.w700),textAlign: TextAlign.center,
