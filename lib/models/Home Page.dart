@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
                   height: 130,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24),
-                    color: Color.fromRGBO(143, 111, 194, 0.3),
+                    color:Color(0xff8F6FC2),
                   ),
                 ),
                 Positioned(
@@ -91,7 +91,7 @@ class Home extends StatelessWidget {
                             image: AssetImage('assets/Images/food.png'),
                           ),
                         ),
-                        Text('Food')
+                        Text('Food',style: TextStyle(color: Colors.black),)
                       ],
                     ),
                   ),
@@ -114,7 +114,7 @@ class Home extends StatelessWidget {
                             image: AssetImage('assets/Images/toys.png'),
                           ),
                         ),
-                        Text('Toys')
+                        Text('Toys',style: TextStyle(color: Colors.black),)
                       ],
                     ),
                   ),
@@ -137,7 +137,7 @@ class Home extends StatelessWidget {
                             image: AssetImage('assets/Images/essentials.png'),
                           ),
                         ),
-                        Text('Essentials')
+                        Text('Essentials',style: TextStyle(color: Colors.black),)
                       ],
                     ),
                   ),
@@ -266,7 +266,7 @@ class DocWidget extends StatelessWidget {
               children: [
                 Text(
                   name,
-                  style: TextStyle(fontSize: 10),
+                  style: TextStyle(fontSize: 10,color: Colors.black,),
                 ),
                 Column(
                   children: [
@@ -276,7 +276,7 @@ class DocWidget extends StatelessWidget {
                     ),
                     Text(
                       '$rate',
-                      style: TextStyle(fontSize: 7),
+                      style: TextStyle(fontSize: 7,color: Colors.amberAccent),
                     )
                   ],
                 )
