@@ -57,7 +57,7 @@ class Profile extends StatelessWidget {
                       child: Icon(
                         Icons.settings,
                         size: 40,
-                        color: Color(0xff74918B),
+                        color: Colors.black38,
                       ),
                     ),
                   ],

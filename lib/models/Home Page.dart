@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pets/models/Doctors.dart';
 import 'package:pets/models/Setting.dart';
 
 import 'Categories.dart';
@@ -25,7 +26,7 @@ class Home extends StatelessWidget {
                   height: 130,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24),
-                    color:Color(0xff8F6FC2),
+                    color: Color(0xff8F6FC2),
                   ),
                 ),
                 Positioned(
@@ -92,7 +93,10 @@ class Home extends StatelessWidget {
                             image: AssetImage('assets/Images/food.png'),
                           ),
                         ),
-                        Text('Food',style: TextStyle(color: Colors.black),)
+                        Text(
+                          'Food',
+                          style: TextStyle(color: Colors.black),
+                        )
                       ],
                     ),
                   ),
@@ -115,7 +119,10 @@ class Home extends StatelessWidget {
                             image: AssetImage('assets/Images/toys.png'),
                           ),
                         ),
-                        Text('Toys',style: TextStyle(color: Colors.black),)
+                        Text(
+                          'Toys',
+                          style: TextStyle(color: Colors.black),
+                        )
                       ],
                     ),
                   ),
@@ -138,7 +145,10 @@ class Home extends StatelessWidget {
                             image: AssetImage('assets/Images/essentials.png'),
                           ),
                         ),
-                        Text('Essentials',style: TextStyle(color: Colors.black),)
+                        Text(
+                          'Essentials',
+                          style: TextStyle(color: Colors.black),
+                        )
                       ],
                     ),
                   ),
@@ -207,7 +217,12 @@ class Home extends StatelessWidget {
               children: [
                 DocWidget(
                   imageUrl: 'assets/Images/Dr.jpg',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => DoctorProfile()));
+                  },
                   name: 'Dr. Sarah Drue',
                   rate: 4.3,
                 ),
@@ -267,7 +282,10 @@ class DocWidget extends StatelessWidget {
               children: [
                 Text(
                   name,
-                  style: TextStyle(fontSize: 10,color: Colors.black,),
+                  style: TextStyle(
+                    fontSize: 10,
+                    color: Colors.black,
+                  ),
                 ),
                 Column(
                   children: [
@@ -277,7 +295,7 @@ class DocWidget extends StatelessWidget {
                     ),
                     Text(
                       '$rate',
-                      style: TextStyle(fontSize: 7,color: Colors.amberAccent),
+                      style: TextStyle(fontSize: 7, color: Colors.amberAccent),
                     )
                   ],
                 )
