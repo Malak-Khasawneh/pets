@@ -18,7 +18,7 @@ class SplashScreen extends StatelessWidget {
               child: Column(
                 children: [
                   SizedBox(height:180),
-                  Image.asset('assets/Images/Splash Screen.png',width:250 ,height:230 ),
+                  Image.asset('assets/Images/main.png',width:250 ,height:230 ),
                   mainText('Care Crew',)   ,
                   SizedBox(height: 90,),
                   Text('Welcome!', style: TextStyle(color: Color(0xff8F6FC2),fontSize: 19,),),

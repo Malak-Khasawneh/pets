@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pets/models/Products.dart';
 
 import 'Categories.dart';
 
@@ -97,7 +98,10 @@ class Home extends StatelessWidget {
                   ),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => Product()));
+                  },
                   child: Container(
                     width: 99,
                     height: 99,

@@ -28,9 +28,9 @@ class NavBar extends StatelessWidget {
           controller.selectedIndex.value = index,
 
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-            BottomNavigationBarItem(icon: Icon(Icons.favorite), label: ''),
-            BottomNavigationBarItem(icon: Icon(Icons.messenger), label: ''),
+            BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: ''),
+            BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined), label: ''),
+            BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined), label: ''),
 
           ],
         ),
@@ -42,6 +42,6 @@ class NavBar extends StatelessWidget {
 
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
-  final screens = [const Home(), const Cart(), const Scaffold(), const Profile()];
+  final screens = [const Home(),  Cart(),  const Profile(),const Scaffold()];
 
 }

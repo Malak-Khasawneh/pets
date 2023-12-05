@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pets/models/Appointment.dart';
 import 'package:pets/models/splash%20screen.dart';
 
-import 'models/Doctors.dart';
-import 'models/Setting.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: Setting (),
+      home: SplashScreen(),
     );
   }
 }
