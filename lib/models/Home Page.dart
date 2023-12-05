@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Categories.dart';
+
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -57,7 +59,7 @@ class Home extends StatelessWidget {
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => Container(),
+                      builder: (context) => Categories(),
                     ));
                   },
                   child: Text(
