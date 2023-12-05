@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pets/models/Setting.dart';
 
 import 'Categories.dart';
 
@@ -13,7 +14,7 @@ class Home extends StatelessWidget {
           centerTitle: true,
           title: Text('Hello, name'),
         ),
-        drawer: Drawer(),
+        drawer: Setting(),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(children: [
