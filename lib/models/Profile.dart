@@ -23,7 +23,7 @@ class Profile extends StatelessWidget {
                   children: [
                     const CircleAvatar(
                       radius: 50.0,
-                      backgroundImage: AssetImage('assets/images/06361988-ab1d-48cb-bdc0-8fb7b6b25a04.jpg'),
+                      backgroundImage: AssetImage('assets/Images/WhatsApp Image 2023-11-26 at 10.52.15 AM.jpeg'),
                     ),
                     const SizedBox(width: 16.0),
                     Column(
@@ -116,7 +116,7 @@ class Profile extends StatelessWidget {
                   },
                   child: Row(
                     children: [
-                      Icon(entry.value['icon'], color: Color(0xff74918B), size: 30),
+                      Icon(entry.value['icon'], color: Color(0xff8F6FC2), size: 30),
                       SizedBox(width: 20),
                       Text(
                         entry.value['title'],
@@ -147,7 +147,7 @@ class EditProfilePage extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             elevation: 0,
-            backgroundColor: const Color(0xffFFFBFE),
+            backgroundColor: const Color(0xff8F6FC2),
             leading: IconButton(
               iconSize: 30,
               icon: const Icon(Icons.arrow_back, color: Colors.black),
@@ -172,7 +172,7 @@ class EditProfilePage extends StatelessWidget {
                 const SizedBox(height: 16.0),
                 const CircleAvatar(
                   radius: 50.0,
-                  backgroundImage: AssetImage('assets/images/06361988-ab1d-48cb-bdc0-8fb7b6b25a04.jpg'),
+                  backgroundImage: AssetImage('assets/Images/WhatsApp Image 2023-11-26 at 10.52.15 AM.jpeg'),
                 ),
 
                 const SizedBox(height: 16.0),
